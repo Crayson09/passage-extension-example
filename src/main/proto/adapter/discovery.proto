@@ -9,11 +9,7 @@ service Discovery {
 }
 
 message TargetRequest {
-    Address client_address = 1;
-    Address server_address = 2;
-    uint64 protocol = 3;
-    string username = 4;
-    string user_id = 5;
+    ClientInfo client = 1;
 }
 
 message TargetsResponse {
